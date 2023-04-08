@@ -1,0 +1,232 @@
+@import url('https://fonts.googleapis.com/css2?family=Libre+Baskerville&family=Varela+Round&display=swap');
+
+
+
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+  }
+  body, html {
+    background: black;
+    height: 100%;
+    width: 100%;
+  }
+  body{
+    display: flex;
+    justify-content: center;
+  }
+  
+  .main{
+    height: 100%;
+    width: 100%;
+    background-color: #E1CF7E;
+    display: grid;
+    grid-template-columns: repeat(12, 1fr);
+    grid-template-rows: repeat(12, 1fr);
+    font-family: 'Varela Round', sans-serif;
+
+  }
+  
+  .header{
+    display: flex;
+    background: #9D1D20;
+    grid-column: 1/9;
+    grid-row: 1/4;
+    
+  }
+  
+  .side-menu{
+    background: #2f2c8a;
+    grid-column: 9/13;
+    grid-row: 1/13;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+  }
+  
+  .pizzas{
+    grid-column: 1/9;
+    grid-row: 4/13; 
+    display: flex;
+    
+  }
+  
+  .orders {
+    background: #13752f;
+    width: 100%;
+    height: 15%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    color: whitesmoke;
+  }
+  
+  .orders h2{
+    font-size: 36px;
+  }
+
+  .order-count {
+    font-size: 30px;;
+  }
+  
+  .rack{
+    width: 30%;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(225,207,126, 0.25)
+  }
+  .in-rack{
+    width: 30%;
+    color: whitesmoke;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    background: rgba(225,207,126, 0.25)
+  }
+  
+  .in-rack h1{
+    padding-bottom: 10px;
+  }
+  
+  .in-rack-count {
+    
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    appearance: none;
+    text-align: center;
+    background: #13752f;
+    color: whitesmoke;
+    border: 4px solid #E1CF7E;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px 5px rgba(0, 0, 0, 0.5);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+  }
+  
+  
+  .rack h1{
+    padding-bottom: 10px;
+  }
+  
+  .rack-number{
+    font-size: 50px;
+    width: 100px;
+    height: 100px;
+    appearance: none;
+    text-align: center;
+    background: #2f2c8a;
+    color: whitesmoke;
+    border: 4px solid #E1CF7E;
+    border-radius: 10px;
+    box-shadow: 2px 3px 5px 5px rgba(0, 0, 0, 0.5);
+    transition: all 0.4s ease;
+  }
+  
+  .rack-number:hover{
+    transform: scale(1.05);
+  }
+  
+  .title{
+    width: 70%;
+    text-align: center;
+    color: whitesmoke;
+    font-size: 60px;
+    font-family: 'Libre Baskerville', serif;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+
+
+  .breakdown-list {
+    list-style: none;
+    margin: 0 auto;
+    font-size: 30px;
+    display: flex;
+    border: 2px solid #1d1d1d;
+    background: #E1CF7E;
+  }
+
+  .breakdown-list li {
+    flex-grow: 1;
+    padding: 10px;
+  }
+  
+  .pizza-preview{
+    background-image: url("https://cdn.shopify.com/s/files/1/0803/0583/articles/Matador-22_900x500_crop_center.jpg?v=1481664238");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center -80px;
+    width: 90%;
+    height: 450px;
+    overflow: hidden;
+  }
+  
+  
+  
+  .pizza-upcoming {
+    height: 55%;
+    width: 80%;
+    color: whitesmoke;
+  }
+  
+  .pizza-upcoming ul{
+    color: whitesmoke;
+    list-style: none;
+    font-size: 26px;
+    text-align: center;
+  }
+  
+  .table-header{
+    background: rgba(255,255,255, 0.75);
+    color: #1d1d1d;
+    
+  }
+  
+  
+  
+  td{
+    text-align: center;
+  }
+  tr{
+    color: whitesmoke;
+    font-weight: bold;
+    letter-spacing: 3px;
+  }
+  
+  .sauce{
+    background: #800020;
+  }
+  
+  .bbq{
+    background: brown;
+  }
+  
+  .pesto{
+    background: #13752f;
+  }
+  
+  .cheese{
+    background: rgba(255,255,255, 0.5);
+    color: #1d1d1d;
+    
+  }
+  
+  .crust{
+    background: #1d1d1d;
+  }
+  
+  .gluten-free-sauce{
+    background: #a30000;
+  }
